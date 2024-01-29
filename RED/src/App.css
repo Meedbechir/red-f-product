@@ -1,0 +1,726 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inconsolata&family=Lugrasimo&family=Montserrat:wght@100;400&family=Open+Sans&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto&family=Satisfy&display=swap");
+* {
+  font-family: "Roboto";
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.inscription,
+.connexion {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../src/assets/images/imagedefond.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inscription h5,
+.connexion h5 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 17.067px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+
+.bouton {
+  width: max-content;
+  border: none;
+  border-bottom: 1px solid #474a4d;
+}
+
+.bouton #signUp,
+.bouton #signIn {
+  border-radius: 5.333px;
+  background: #474a4d;
+  border: none;
+}
+
+.inscription .form-control,
+.connexion .form-control {
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  border-radius: 0;
+  outline: none;
+}
+.inscription .form-control:focus,
+.connexion .form-control:focus {
+  outline: none !important;
+  border: none;
+  box-shadow: none !important;
+  border-bottom: 1px solid #474a4d;
+}
+
+.inscription .titleAppli,
+.connexion .titleAppli {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 26.663px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21.33px;
+}
+
+.inscription .logoIns,
+.connexion .logoIns {
+  width: 50px;
+  height: 50px;
+}
+
+.connexion .form-footer h5,
+.connexion .form-footer span,
+.inscription .form-footer h5,
+.inscription .form-footer span {
+  color: #ffd964 !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.connexion .form-footer,
+.inscription .form-footer {
+  color: #fff;
+}
+
+/*----------------------Formulaire css------------------*/
+.inscription .bouton,
+.connexion .bouton,
+.hotels .modal-footer .bouton {
+  border-radius: 5.333px;
+  background: #474a4d;
+  border: none;
+  color: #fff;
+}
+
+/*----------------------Page hotel css-------------------*/
+.hotels .bouton:focus {
+  outline: none !important;
+}
+
+.hotels #createHotel {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #000 !important;
+  border-radius: 14px;
+  border: 1px solid #aeaeae;
+}
+
+.hotels #saveUpdate {
+  background-color: rgb(13, 177, 177) !important;
+  border: none !important;
+}
+.hotels #delete {
+  background-color: red !important;
+  border: none !important;
+}
+
+.hotels .cardHotels .formModals #save {
+  background-color: green !important;
+  border: none !important;
+}
+
+.hotels .cardHotels .formModals #cancel {
+  background-color: dimgray !important;
+}
+
+.hotels .cardHotels .formModals {
+  padding: 0 2% 0 2% !important;
+}
+
+.hotels .totalHotel {
+  color: rgba(195, 195, 195, 0.87);
+}
+
+.hotels .imageCard {
+  cursor: pointer !important;
+}
+.hotels .modalform {
+  max-height: max-content;
+}
+
+.hotels .imageModalUpdate img {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #474a4d;
+  border-radius: 14px;
+}
+
+.hotels h5 {
+  text-transform: uppercase !important;
+}
+
+.hotels .arrow {
+  color: #555555 !important;
+}
+.imageModal i,
+.textImg {
+  color: #aeaeae !important;
+  cursor: pointer;
+}
+
+.hotels .hotelsCard {
+  background: #f0f0f0;
+}
+
+.hotels .hotelsCard i {
+  color: #474a4d !important;
+  cursor: pointer;
+}
+
+.hotels .hotelsCard .card {
+  border-radius: 14px;
+}
+
+.hotels {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+.hotels .titleHotels {
+  background-color: #fff;
+}
+
+.hotels .titleHotels .bouton {
+  background-color: transparent;
+  color: #0cc2aa;
+  border-radius: 14px;
+  border: 1px solid #0cc2aa;
+}
+.hotels .modal-footer .bouton {
+  border: none !important;
+}
+
+.form-demo .card {
+  min-width: 450px;
+}
+
+.form-demo .card form {
+  margin-top: 2rem;
+}
+
+/*------------------------Sidebar css----------------------*/
+
+.sidebar {
+  background-image: url("../src/assets/images/imagedefond.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  z-index: 1000;
+}
+
+.sidebar a i {
+  color: #fff;
+}
+
+.sidebar .linkSidebar a {
+  background: transparent;
+  color: #fff;
+  border: none;
+}
+
+.linkSidebar .items:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+.sidebar .contentOnline {
+  border-top: 1px solid #0cc2aa;
+}
+
+.sidebar .items i {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sidebar .items:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+.sidebar .linkSidebar .active {
+  background-color: #fff;
+  color: #000;
+}
+
+.sidebar #search-icon {
+  display: none !important;
+}
+
+.linkSidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentNavbar {
+  width: 100%;
+}
+/*-----------------------Navbar css-------------------*/
+.navbar {
+  background: #ffffff;
+  padding: 0 !important;
+}
+
+.navbar .mobileSearch {
+  display: none;
+}
+
+.navbar .dropdown-toggle::after {
+  visibility: hidden !important;
+}
+.navbar .notification-badge {
+  display: flex;
+  background: #fcc100;
+  color: white;
+  border-radius: 4.266px;
+  padding: 0px 5px 0px 5px;
+  font-size: 0.8rem;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+  right: 0;
+  transform: translate(-40%, 0);
+}
+.navbar input[type="search"]:focus {
+  box-shadow: none;
+}
+/*Badge de la cloche de notification*/
+.css-dlwkee-MuiBadge-badge {
+  background-color: #fcc100 !important;
+}
+
+.box-navabar {
+  position: sticky !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  z-index: 1000 !important;
+}
+
+.no-hover:hover {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+/*-------------Dashboard css-------------*/
+
+.dashboardCard {
+  background: #f0f0f0;
+}
+
+.dashboard h6,
+.hotels .titleHotels h6 {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Roboto";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 100 !important;
+  line-height: 35.195px;
+  margin-bottom: 2px;
+}
+
+.hotels .cardHotels .modal-footer .bouton {
+  border: none;
+  background-color: transparent;
+}
+
+.hotels .formModals input:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.dashboard {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+.dashboard .cards {
+  border-radius: 14px;
+}
+
+.dashboard .titleDashboard {
+  background-color: #fff;
+}
+
+#icon1 .icon {
+  border-radius: 50%;
+  color: white !important;
+  background-color: #a88add;
+}
+#icon2 .icon {
+  border-radius: 50%;
+  color: white !important;
+  background-color: #0cc2aa;
+}
+#icon3 .icon {
+  border-radius: 50%;
+  color: white !important;
+  background-color: #fcc100;
+}
+#icon4 .icon {
+  border-radius: 50%;
+  color: white !important;
+  background-color: #f90000;
+}
+#icon5 .icon {
+  border-radius: 50%;
+  color: white !important;
+  background-color: #9c27b0;
+}
+#icon6 .icon {
+  border-radius: 50%;
+  color: white !important;
+  background-color: #1565c0;
+}
+
+@media screen and (max-width: 900px) {
+  .linkSidebar {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .sidebar #logo span {
+    font-size: 12px !important;
+  }
+
+  .sidebar #logo #imgLogo {
+    font-size: 18px !important;
+  }
+
+  .sidebar {
+    z-index: 1000 !important;
+    position: relative;
+  }
+
+  .sidebar .linkSidebar .items span {
+    font-size: 12px !important;
+  }
+
+  .template .contenu {
+    flex-direction: column-reverse;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .template .contenu #sidebarDiv {
+    width: 100% !important;
+    height: 70vh !important;
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000 !important;
+  }
+
+  .contentNavbar {
+    z-index: 0 !important;
+  }
+
+  .template .contenu #sidebarDiv #logo,
+  .template .contenu #sidebarDiv hr {
+    display: none !important;
+  }
+
+  .title,
+  .name {
+    display: none !important;
+  }
+
+  .sidebar .linkSidebar .active {
+    background-color: transparent !important;
+    color: #fff;
+    transform: scale(1.3) !important;
+  }
+
+  .template .contenu #sidebarDiv .sidebar .linkSidebar .items {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    height: 80% !important;
+  }
+
+  .template .contenu #sidebarDiv .sidebar .linkSidebar .items .textSidebar,
+  .sidebar h6,
+  .sidebar .nameOnline {
+    display: none !important;
+  }
+
+  .sidebar .containerOnline {
+    height: 80% !important;
+    width: 40% !important;
+  }
+
+  .sidebar .linkSidebar .iconSidebar svg {
+    font-size: 40px !important;
+  }
+
+  .sidebar #search-icon {
+    display: block !important;
+  }
+
+  .sidebar #search-icon svg {
+    font-size: 40px !important;
+  }
+
+  .sidebar .contentOnline {
+    margin-top: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    border: none !important;
+  }
+
+  .items i {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .items .bi::before {
+    width: 100% !important;
+    font-size: 35px !important;
+    margin-left: 25%;
+  }
+
+  .template .contenu #sidebarDiv .sidebar {
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: 1000 !important;
+    display: flex !important;
+    align-items: center;
+    height: 50vh !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .sidebar .accountCircle {
+    width: 100%;
+    font-size: 2rem !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .template .contenu .cardHotels {
+    width: 90% !important;
+  }
+
+  #createHotel {
+    font-size: 10px !important;
+  }
+  #createHotel i {
+    font-size: 15px !important;
+  }
+
+  .hotels .titleHotels {
+    padding: 4% !important;
+  }
+
+  .hotels .titleHotels h6 {
+    font-size: 24px !important;
+  }
+
+  .navbar form {
+    display: none !important;
+  }
+
+  .navbar #navbarNav {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+
+  .navbar ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .navbar .mobileSearch {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .navbar .mobileSearch form {
+    display: flex !important;
+    width: 100% !important;
+  }
+  .navbar .mobileSearch form .input-group {
+    width: 80% !important;
+  }
+
+  .navbar .content {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .navbar .disconnect {
+    width: 20% !important;
+  }
+
+  .navbar .disconnect svg {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .navbar .notif svg {
+    font-size: 40px;
+  }
+
+  .navbar .dropdown {
+    display: none;
+  }
+
+  .template #sidebarDiv .linkSidebar {
+    display: flex !important;
+    flex-direction: row !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 80% !important;
+    width: 80% !important;
+    align-items: center !important;
+  }
+
+  .inputs {
+    flex-direction: column;
+  }
+
+  .hotels .modal-footer > div {
+    width: 100% !important;
+  }
+
+  .hotels .modal-footer {
+    padding: 0 !important;
+  }
+
+  .hotels .modal-title {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .hotels #delete,
+  .hotels #saveUpdate {
+    font-size: 14px !important;
+  }
+
+  .dashboardCard {
+    padding-bottom: 30% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #home .charts {
+    display: flex;
+    flex-direction: column;
+  }
+  .data {
+    margin: 0 !important;
+  }
+
+  .navbar ul {
+    display: flex;
+    width: 100%;
+    flex-direction: none !important;
+  }
+
+  .mobileSearch {
+    display: block !important;
+    width: 100% !important;
+    height: 50px;
+  }
+
+  .contentNavbar {
+    padding-bottom: 26% !important;
+    z-index: 0 !important;
+  }
+
+  .template .contenu #sidebarDiv {
+    width: 100% !important;
+    height: 100px !important;
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .template .contenu #sidebarDiv .sidebar {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    z-index: 1000 !important;
+  }
+
+  .template .contenu {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .template .contenu #sidebarDiv {
+    width: 100% !important;
+    height: 15% !important;
+  }
+
+  .template .contenu .cardHotels {
+    width: 90% !important;
+  }
+
+  .template .contenu #sidebarDiv #logo,
+  .template .contenu #sidebarDiv hr {
+    display: none !important;
+  }
+
+  .template .contenu #sidebarDiv .sidebar .linkSidebar .items {
+    width: 20% !important;
+  }
+
+  .template .contenu #sidebarDiv .sidebar .linkSidebar {
+    display: flex !important;
+    justify-content: space-around !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .sidebar .textSidebar {
+    font-size: 12px !important;
+  }
+
+  .sidebar .brand-name {
+    font-size: 11px !important;
+  }
+  .sidebar #logo img {
+    width: 18px !important;
+    height: 20px !important;
+  }
+}
